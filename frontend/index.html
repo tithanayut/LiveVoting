@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Live Voting</title>
+  </head>
+  <body>
+    <h1>Live Voting</h1>
+
+    <h2>Ongoing Voting</h2>
+    <ul id="voting_list"></ul>
+
+    <h2>Create Voting</h2>
+    <form id="i_create_voting">
+      <input type="text" placeholder="Voting ID" id="i_id" />
+      <input type="text" placeholder="Topic" id="i_topic" />
+      <input type="submit" />
+    </form>
+
+    <h2>Vote</h2>
+    <form id="s_vote">
+      <input type="text" placeholder="Voting ID" id="s_id" />
+      <select id="s_option">
+        <option value="yes">Yes</option>
+        <option value="no">No</option>
+        <option value="nah">Nah</option>
+      </select>
+      <input type="submit" value="Vote" />
+    </form>
+
+    <script
+      src="https://cdn.socket.io/4.4.0/socket.io.min.js"
+      integrity="sha384-1fOn6VtTq3PWwfsOrk45LnYcGosJwzMHv+Xh/Jx5303FVOXzEnw0EpLv30mtjmlj"
+      crossorigin="anonymous"
+    ></script>
+    <script src="app.js"></script>
+  </body>
+</html>
